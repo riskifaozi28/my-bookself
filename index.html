@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookself-dicoding</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/micro-animation.css" />
+    <link rel="stylesheet" href="css/scroll-bar.css" />
+  </head>
+  <body>
+    <section id="pop-up" class="pop-up display-none">
+      <header>
+        <div class="text-display">
+          <img src="img/img-pencil.png" alt="img-book" />
+          <h2 class="display">List Buku</h2>
+        </div>
+        <div class="check-box">
+          <p>sudah dibaca</p>
+          <input type="checkbox" id="checkbox" />
+        </div>
+      </header>
+
+      <form action="#" class="form" id="form">
+        <input type="text" id="judul" class="form-input" placeholder="Judul Buku" />
+        <input type="text" id="penulis" class="form-input" placeholder="Penulis Buku" />
+        <input type="number" id="tahun" class="form-input" placeholder="Tahun Penerbit" />
+        <button type="submit" id="tambahkan" class="btn-add">
+          <img src="img/icon-add.svg" alt="icon-add" />
+          <p>tambahkan</p>
+        </button>
+      </form>
+    </section>
+
+    <div id="bg" class="bg display-none"></div>
+
+    <main>
+      <header>
+        <img src="img/logo.png" alt="logo" />
+      </header>
+      <nav class="navbar">
+        <div>
+          <div class="text-display">
+            <img src="img/img-book.png" alt="img-book" />
+            <h2 class="display">Dashboard</h2>
+          </div>
+          <button id="buat" class="btn-add">
+            <img src="img/icon-add.svg" alt="icon-add" />
+            <p>buat list</p>
+          </button>
+        </div>
+        <div class="search">
+          <input type="text" id="search" class="search-input" placeholder="cari judul buku" />
+          <img src="img/icon-search.svg" alt="icon-search" />
+        </div>
+      </nav>
+      <section class="container">
+        <section class="baca">
+          <nav class="navbar-baca">
+            <h3 class="text-title">belum dibaca</h3>
+            <h3 class="count" id="count-belum-baca">0</h3>
+          </nav>
+          <section class="list" id="belum-dibaca"></section>
+        </section>
+        <section class="baca">
+          <nav class="navbar-baca">
+            <h3 class="text-title">sudah dibaca</h3>
+            <h3 class="count" id="count-sudah-baca">0</h3>
+          </nav>
+          <section class="list" id="sudah-dibaca"></section>
+        </section>
+      </section>
+    </main>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/tombol.js" type="text/javascript"></script>
+    <script src="js/text-list.js" type="text/javascript"></script>
+  </body>
+</html>
