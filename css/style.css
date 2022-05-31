@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.01em;
+  --color-pr: #3b98ff;
+  --color-pr-hover: #3255f3;
+  --color-sc: #ebf4ff;
+  --color-text-pr: #000000;
+  --color-text-sc: #adb5bd;
+  --color-text-tr: #f8f9fa;
+  --color-red: #ff302f;
+  --color-green: #00e676;
+}
+
+/* konten utama */
+main {
+  max-width: 1110px;
+  margin: 80px auto 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar {
+  margin-bottom: 40px;
+}
+
+.text-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.display {
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--color-text-pr);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-input {
+  text-align: end;
+  font-size: 20px;
+  color: var(--color-text-pr);
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.search-input::placeholder {
+  color: var(--color-text-sc);
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--color-pr);
+  color: var(--color-text-tr);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-add:active {
+  background-color: var(--color-pr-hover);
+}
+
+/* pop-up konten formulir*/
+.pop-up {
+  position: fixed;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: white;
+  border-radius: 28px;
+  padding: 80px 60px;
+  animation: popup 500ms ease-in-out;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: #00000033;
+  animation: opacity 500ms ease-in-out;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--color-text-pr);
+  text-transform: capitalize;
+}
+
+.pop-up header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form-input {
+  font-size: 20px;
+  color: var(--color-text-pr);
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-text-sc);
+}
+
+.display-none {
+  display: none;
+}
+
+/*  container list buku  */
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.baca {
+  flex-basis: 50%;
+  padding: 32px;
+  background-color: var(--color-text-tr);
+  color: var(--color-text-pr);
+  border-radius: 24px;
+  height: max-content;
+}
+
+.navbar-baca {
+  margin-bottom: 20px;
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.count {
+  padding: 10px 17px;
+  background-color: var(--color-sc);
+  color: var(--color-pr);
+  border-radius: 16px;
+}
+
+.list-buku {
+  margin-bottom: 20px;
+  padding: 40px 32px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 16px 16px 0 rgba(109, 109, 109, 0.06);
+}
+
+.judul-buku {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.paragraf {
+  font-weight: 300;
+  color: var(--color-text-sc);
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.paragraf-buku {
+  display: flex;
+  flex-basis: 50%;
+  gap: 12px;
+}
+
+.text-buku {
+  font-weight: 600;
+  color: var(--color-text-pr);
+}
+
+.tombols {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-sc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.6px solid transparent;
+  border-radius: 50px;
+  background: none;
+  padding: 12px 16px;
+
+  font-size: 16px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.btn-sc:active {
+  border: 0.6px solid rgba(75, 75, 75, 0.1);
+  animation: garis 0.6s ease-in-out;
+}
+
+.btn-sc:hover {
+  background-color: #00000006;
+}
+
+.hijau {
+  color: var(--color-green);
+}
+.merah {
+  color: var(--color-red);
+}
